@@ -8,7 +8,7 @@ class SignedInState extends AbstractState
 {
     public function beWashed(Duck $duck)
     {
-        $timeout = rand(10000, 100000);
+        $timeout = rand(100000, 300000);
         usleep($timeout);
 
         $property = ReflectionHelper::getReflectionProperty();

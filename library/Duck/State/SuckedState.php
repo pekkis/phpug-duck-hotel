@@ -8,8 +8,12 @@ class SuckedState extends AbstractState
 {
     public function beSuckled(Duck $duck)
     {
-        $timeout = rand(10000, 100000);
+        $timeout = rand(500000, 1000000);
         usleep($timeout);
+
+        if (rand(1, 100) > 70) {
+            throw new \DomainException("Suckling of the duck was not successful!!!");
+        }
 
         $property = ReflectionHelper::getReflectionProperty();
         $property->setValue($duck, StateHelper::getState('Duck\State\SuckledState'));
