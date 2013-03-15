@@ -1,0 +1,34 @@
+{
+    "name": "pekkis/duck-hotel",
+    "type": "app",
+    "description": "Demo app",
+    "keywords": ["duck"],
+    "homepage": "http://github.com/xi-project/xi-queue",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mikko Forsström",
+            "email": "pekkisx@gmail.com",
+            "homepage": "http://diktaattoriporssi.com",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4.5",
+        "rhumsaa/uuid": "2.0.*",
+        "videlalvaro/php-amqplib": "2.0.*",
+        "iron-io/iron_mq": "1.4.*"
+    },
+
+    "require-dev": {
+
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Duck": "library/"
+        }
+    },
+    "minimum-stability": "stable"
+}
