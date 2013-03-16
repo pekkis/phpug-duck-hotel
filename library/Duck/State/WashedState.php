@@ -12,7 +12,7 @@ class WashedState extends AbstractState
         usleep($timeout);
 
         if (rand(1, 100) > 90) {
-            throw new \DomainException("Duck refused to be washed!!!");
+            throw new \DomainException("Duck refused to be sucked!!!");
         }
 
         $property = ReflectionHelper::getReflectionProperty();
