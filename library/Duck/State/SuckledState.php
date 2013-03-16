@@ -8,7 +8,7 @@ class SuckledState extends AbstractState
 {
     public function goForASwim(Duck $duck)
     {
-        $timeout = rand(1000000, 200000);
+        $timeout = rand(100000, 200000);
         usleep($timeout);
 
         $property = ReflectionHelper::getReflectionProperty();
